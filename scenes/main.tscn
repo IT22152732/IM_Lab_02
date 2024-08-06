@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dkmo8djqq7b4v" path="res://sprites/Tilemap/tilemap_packed.png" id="6_v0yg8"]
 [ext_resource type="Texture2D" uid="uid://dmn6b2gaulnmw" path="res://sprites/Tilemap/bombas.png" id="7_r76nt"]
 [ext_resource type="Texture2D" uid="uid://cnw2iwufvfctn" path="res://sprites/Tilemap/blockPack_tilesheet.png" id="8_wo6rc"]
-[ext_resource type="TileSet" uid="uid://xtwi1ke7ols1" path="res://tilesets/prototype_tile_sets.tres" id="9_1pp43"]
+[ext_resource type="TileSet" path="res://tilesets/prototype_tile_sets.tres" id="9_1pp43"]
 [ext_resource type="Texture2D" uid="uid://bg5y7yvebwk18" path="res://sprites/Tilemap/tilemap.png" id="9_l0cs2"]
 [ext_resource type="PackedScene" uid="uid://e0py0qkoy7t2" path="res://scenes/player.tscn" id="9_oatn2"]
 [ext_resource type="PackedScene" uid="uid://bd20ha0q4ip4o" path="res://scenes/coin.tscn" id="11_n3k50"]
