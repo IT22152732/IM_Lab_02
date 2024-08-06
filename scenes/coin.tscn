@@ -1,0 +1,122 @@
+[gd_scene load_steps=17 format=3 uid="uid://bd20ha0q4ip4o"]
+
+[ext_resource type="Texture2D" uid="uid://bped01tsjeycn" path="res://assets/sprites/coin.png" id="1_i1nbd"]
+
+[sub_resource type="GDScript" id="GDScript_cgbxp"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(\"I'm a coin\")
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xq57"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfkyt"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ondin"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wsq77"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai1wd"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yx4s7"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hj8a"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_larg1"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urpxa"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwh0n"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_138xa"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhysc"]
+atlas = ExtResource("1_i1nbd")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w15gj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xq57")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kfkyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ondin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wsq77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai1wd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yx4s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hj8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_larg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urpxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwh0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_138xa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhysc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n625s"]
+radius = 5.0
+
+[node name="Area2D" type="Area2D"]
+script = SubResource("GDScript_cgbxp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w15gj")
+frame_progress = 0.204837
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n625s")
